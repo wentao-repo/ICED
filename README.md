@@ -1,1 +1,7 @@
 # ICED
+A Pytorch implementation of the LILA framework proposed in our paper "Learning from Incomplete Labeled Datavia Adversarial Data Generation".
+
+## Brief Introduction
+Crowdsourcing has proven to be a cost-effective way to meetthe demands for massive labeled training data in superviseddeep learning models. However, the obtained crowdsourcedlabels are often inconsistent and noisy due to cognitive and expertise differences among crowd workers. Existing approaches either infer latent true labels from noisy crowd-sourced labels or learn a discriminative model directly from the crowdsourced labeled data, assuming the latent true label distribution is class-balanced. Unfortunately, in many real-world applications, the true label distribution typically is imbalanced across classes involved in the collected data. Therefore, in this paper, we address the problem of learning from crowdsourced labeled data with an imbalanced true label distribution. We propose a new framework, named “Learning from Imbalanced Crowdsourced Labeled Data” (ICED), which simultaneously infers true labels from imbalanced crowdsourced labeled data and achieves high accuracy on downstream tasks such as classification. The ICED framework consists of two modules--- a true label inference module and a synthetic data generation module--- that augment each other iteratively. Extensive experiments conducted on both synthetic and real-world datasets demonstrate the effectiveness of the ICED framework. 
+
+## Framework
